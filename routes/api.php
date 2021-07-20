@@ -24,3 +24,6 @@ Route::get('videos', [VideosController::class, 'todosVideos']);
 
 //Rota para obter vídeo específico pela ID
 Route::get('videos/{id}', [VideosController::class, 'getOne']);
+
+//Rota para adicionar um único vídeo.
+Route::post('adicionar-video', [VideosController::class, 'novoVideo']);
