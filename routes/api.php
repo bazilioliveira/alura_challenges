@@ -27,3 +27,9 @@ Route::get('videos/{id}', [VideosController::class, 'getOne']);
 
 //Rota para adicionar um único vídeo.
 Route::post('adicionar-video', [VideosController::class, 'novoVideo']);
+
+//Rota para adicionar um único vídeo.
+Route::put('alterar-video/{id}', [VideosController::class, 'alterarVideo']);
+
+//Rota para deletar um vídeo pelo ID.
+Route::delete('deletar-video/{id}', [VideosController::class, 'deletarVideo']);
